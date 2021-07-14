@@ -1,0 +1,306 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*-----   header styles   -----*/
+
+header{
+    margin-bottom:70px;
+}
+.header-section{
+    height:100vh;
+    background:rgb(45, 37, 160)
+}
+
+.header{
+    height:100%;
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-info h1{
+    color:#fff;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.head-info a{
+    color:#fff;
+    background:#E02C6D;
+    text-decoration: none;
+    border:1px solid red;
+    padding:10px 20px;
+    position: absolute;
+    
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width:0;
+    height:3px;
+    background: #fff;
+    transition: width .5s;
+
+}
+.cool-link:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+.head-image img{
+    width:555px;
+}
+
+
+/*-----  Players Info  ----- */
+
+.players{
+    width:1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:auto;
+}
+.player{
+    width:300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding:15px;
+    margin:30px 0;
+}
+.player img{
+    width:300px;
+}
+
+/* others games style */
+
+.games-item{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.games-item h1{
+    color:rgb(50, 33, 71);
+    font-size:42px;
+}
+.others-games{
+    width:90%;
+    margin:auto;
+}
+.games{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin:auto;
+}
+.game{
+    width:21%;
+}
+
+.game, .game-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.game i{
+    font-size: 62px;
+    color:#9697E8;
+}
+.game-detail{
+    height:210px;
+}
+.game-detail h3{
+    font-size: 24px;
+}
+.game-detail p{
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/*-----  news style  -----*/
+
+.news-area > h1{
+    width:80%;
+    text-align: center;
+    margin-top: 50px;
+}
+.news-area > h2{
+    width:80%;
+    text-align: left;
+}
+
+.news-area{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width:80%;
+    margin:auto;
+}
+.news-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 200px;
+}
+
+
+/*-----  footer info ----- */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:100px;
+}
+
+.footer-image img{
+    width:380px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    width:40px;
+    height:40px;
+    color:#969BAB;
+    background: rgb(231, 231, 232);
+    border-radius: 50%;
+    text-decoration: none;
+    margin:0 14px;
+    transition: .5s ease-in-out;
+}
+.links a:hover{
+    background:#969BAB;
+    color: rgb(231, 231, 232);
+}
+
+
+@media only screen and (max-width:688px){
+    
+    .header{
+        width:100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-title{
+        margin-top: 50px;
+    }
+    .head-image img{
+        width:230px;
+        margin-bottom: 167px;
+    }
+    .head-title h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .players{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .games{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin:auto;
+
+        } 
+         .others-games{
+            width:100%;
+            margin:auto;
+        } 
+        .game{
+            width:100%;
+        }
+        .news-area > h1{
+            width:100%;
+            text-align: center;
+        }
+        .news-area > h2{
+            width:100%;
+            text-align: left;
+        }
+        .news-items{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 200px;
+        }
+        .footer-image img{
+            width:280px;
+        }
+}
+
+
+
+/*---------------  tablet device ------------------*/
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .header{
+        width:100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-title{
+        margin-top: 50px;
+    }
+    
+   
+    .players{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .games{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin:auto;
+
+        } 
+         .others-games{
+            width:100%;
+            margin:auto;
+        } 
+        .game{
+            width:100%;
+        }
+        
+        .news-items{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 200px;
+        }
+        .footer-image img{
+            width:280px;
+        }
+} 
